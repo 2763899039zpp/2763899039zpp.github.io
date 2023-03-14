@@ -25,16 +25,22 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Archive | Hexo</title>
-  <meta property="og:type" content="website">
-<meta property="og:title" content="陌上烟雨寒的空间">
-<meta property="og:url" content="https://2763899039zpp.github.io/archives/index.html">
+  <title>你不知道的javascript | Hexo</title>
+  <meta name="description" content="第一章 作用域是什么编译原理 分词&#x2F;词法分析 （Tokenizing&#x2F;Lexing）将代码字符串分解成有意义的代码块，这些代码块称为词法单元（token） 解析&#x2F;语法分析 （Parsing）这个过程是将词法单元流转化成一个由元素逐级嵌套所组成的代表了程序语法结构的树。这个树被称为“抽象语法树”（Abstract Syntax Tree，AST） 代码生成将 AST 转">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你不知道的javascript">
+<meta property="og:url" content="https://2763899039zpp.github.io/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/index.html">
 <meta property="og:site_name" content="陌上烟雨寒的空间">
+<meta property="og:description" content="第一章 作用域是什么编译原理 分词&#x2F;词法分析 （Tokenizing&#x2F;Lexing）将代码字符串分解成有意义的代码块，这些代码块称为词法单元（token） 解析&#x2F;语法分析 （Parsing）这个过程是将词法单元流转化成一个由元素逐级嵌套所组成的代表了程序语法结构的树。这个树被称为“抽象语法树”（Abstract Syntax Tree，AST） 代码生成将 AST 转">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-03-09T08:42:40.000Z">
+<meta property="article:modified_time" content="2023-03-14T03:10:35.010Z">
 <meta property="article:author" content="zhangpp">
+<meta property="article:tag" content="js">
+<meta property="article:tag" content="book">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="https://2763899039zpp.github.io/archives/index.html">
+  <link rel="canonical" href="https://2763899039zpp.github.io/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/index.html">
   
     <link rel="alternate" href="/atom.xml" title="陌上烟雨寒的空间" type="application/atom+xml">
   
@@ -320,80 +326,212 @@
 </aside>
 
   
-  
+  <!--
+ * @Author: 陌上烟雨寒 2763899039@qq.com
+ * @Date: 2023-03-10 13:23:53
+ * @LastEditors: 陌上烟雨寒 2763899039@qq.com
+ * @LastEditTime: 2023-03-10 16:12:11
+ * @FilePath: \hexo-blog\themes\hexo-theme-pure\layout\_partial\sidebar-toc.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
 <main class="main" role="main">
-  	<article class="content article article-archives article-type-list" itemscope="">
-	    <header class="article-header">
-	      <h1 itemprop="title">Archive</h1>
-	      <p class="text-muted">Total 4 articles</p>
-	    </header>
-	    <div class="article-body">
-	      
+  <div class="content">
+  <article id="post-book/你不知道的javascript" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      
+        
   
+    <h1 class="article-title" itemprop="name">
+      你不知道的javascript
+    </h1>
+  
+
+      
+      <div class="article-meta">
+        <span class="article-date">
+    <i class="icon icon-calendar-check"></i>
+	<a href="/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/" class="article-date">
+	  <time datetime="2023-03-09T08:42:40.000Z" itemprop="datePublished">2023-03-09</time>
+	</a>
+</span>
+        
+  <span class="article-category">
+    <i class="icon icon-folder"></i>
+    <a class="article-category-link" href="/categories/book/">book</a>
+  </span>
+
+        
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>
+	<a class="article-tag-link-link" href="/tags/book/" rel="tag">book</a>, <a class="article-tag-link-link" href="/tags/js/" rel="tag">js</a>
+  </span>
+
+
+        
+
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/#comments" class="article-comment-link">Comments</a></span>
+        
+      </div>
+    </div>
+    <div class="article-entry marked-body" itemprop="articleBody">
+      
+        <h1 id="第一章-作用域是什么"><a href="#第一章-作用域是什么" class="headerlink" title="第一章 作用域是什么"></a>第一章 作用域是什么</h1><h2 id="编译原理"><a href="#编译原理" class="headerlink" title="编译原理"></a>编译原理</h2><ul>
+<li>分词&#x2F;词法分析 （Tokenizing&#x2F;Lexing）<br>将代码字符串分解成有意义的代码块，这些代码块称为<strong>词法单元</strong>（token）</li>
+<li>解析&#x2F;语法分析 （Parsing）<br>这个过程是将<strong>词法单元流</strong>转化成一个由元素逐级嵌套所组成的代表了程序语法结构的树。这个树被称为“抽象语法树”（Abstract Syntax Tree，<strong>AST</strong>）</li>
+<li>代码生成<br>将 AST 转换为可执行代码的过程称被称为代码生成</li>
+</ul>
+<h2 id="理解作用域"><a href="#理解作用域" class="headerlink" title="理解作用域"></a>理解作用域</h2><ul>
+<li>引擎<br>负责整个javascript程序的编译及执行</li>
+<li>编译器<br>负责语法缝隙及代码生成</li>
+<li>作用域<br>确定当前执行的代码对这些标识符的访问权限</li>
+</ul>
+<p>变量的赋值操作会执行两个动作，首先编译器会在当前作用域中声明一个变量（如<br>果之前没有声明过），然后在运行时引擎会在作用域中查找该变量，如果能够找到就会对<br>它赋值。</p>
+<p>RHS:  谁是赋值操作的源头 retrieve his source value（取到它的源值）<br>LHS:  赋值操作的目标是谁</p>
+<h2 id="作用域嵌套"><a href="#作用域嵌套" class="headerlink" title="作用域嵌套"></a>作用域嵌套</h2><p>引擎从当前的执行作用域开始查找变量，如果找不到，<br>就向上一级继续查找。当抵达最外层的全局作用域时，无论找到还是没找到，查找过程都<br>会停止</p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><ul>
+<li><p>ReferenceError<br>执行LHS查询时 在作用域寻找不到变量 引擎就会抛出该错误</p>
+</li>
+<li><p>TypeError<br>对一个非函数类型的值进行函数调用<br>引用null或undefined类型的值中的属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var a = 2;</span><br><span class="line">a(); // TypeError</span><br><span class="line"></span><br><span class="line">var b</span><br><span class="line">b.length; // TypeError</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>小测验</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function foo(a)&#123;</span><br><span class="line">  var b = a;</span><br><span class="line">  return a + b;</span><br><span class="line">&#125;</span><br><span class="line">var c = foo(2)</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li><p>找出所有的 LHS 查询（这里有 3 处！）<br>c &#x3D; ..; 、 a &#x3D; 2 （隐式变量分配）、 b &#x3D; ..</p>
+</li>
+<li><p>找出所有的 RHS 查询（这里有 4 处！）<br>foo(2.. 、 &#x3D; a; 、 a .. 、 .. b</p>
+</li>
+</ol>
+
+      
+    </div>
+    <div class="article-footer">
+      <blockquote class="mt-2x">
+  <ul class="post-copyright list-unstyled">
+    
+    <li class="post-copyright-link hidden-xs">
+      <strong>本文链接：</strong>
+      <a href="https://2763899039zpp.github.io/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/" title="你不知道的javascript" target="_blank" rel="external">https://2763899039zpp.github.io/2023/03/09/book/你不知道的javascript/</a>
+    </li>
+    
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong> 本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by/4.0/deed.zh" target="_blank" rel="external">CC BY 4.0 CN协议</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+</blockquote>
+
+
+<div class="panel panel-default panel-badger">
+  <div class="panel-body">
+    <figure class="media">
+      <div class="media-left">
+        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+          <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">陌上烟雨寒</span><small class="ml-1x">Web Developer</small></a></h3>
+        <div>间歇性勤奋的前端搬砖用户。</div>
+      </div>
+    </figure>
+  </div>
+</div>
+
+
+    </div>
+  </article>
   
     
+  <section id="comments">
+  	
+      <div id="vcomments"></div>
     
-      
-      
-      <section class="panel panel-default b-no">
-        <div class="panel-heading" role="tab">
-          <h3 class="panel-title">
-            <a data-toggle="collapse" href="#collapse2023" aria-expanded="true">
-              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
-              2023
-            </a>
-            <!-- <a href="/archives/2023" class="archive-year">2023</a> -->
-          </h3>
+  </section>
+
+
+  
+</div>
+
+  <nav class="bar bar-footer clearfix" data-stick-bottom>
+  <div class="bar-inner">
+  
+  <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" title="node学习（自用）"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+    </li>
+    
+    
+    <li class="next">
+      <a href="/2023/03/09/book/javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="红宝书"><span>Older&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+    </li>
+    
+    
+  </ul>
+  
+  
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-fancy btn-donate pop-onhover bg-gradient-warning" data-toggle="modal" data-target="#donateModal"><span>$</span></button>
+  <!-- <div class="wave-icon wave-icon-danger btn-donate" data-toggle="modal" data-target="#donateModal">
+    <div class="wave-circle"><span class="icon"><i class="icon icon-bill"></i></span></div>
+  </div> -->
+  
+  
+  <div class="bar-right">
+    
+    <div class="share-component" data-sites="weibo,qq,wechat,facebook,twitter" data-mobile-sites="weibo,qq,qzone"></div>
+    
+  </div>
+  </div>
+</nav>
+  
+<!-- Modal -->
+<div class="modal modal-center modal-small modal-xs-full fade" id="donateModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content donate">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div class="modal-body">
+        <div class="donate-box">
+          <div class="donate-head">
+            <p>Maybe you could buy me a cup of coffee.</p>
+          </div>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="alipay">
+              <div class="donate-payimg">
+                <img src="/images/donate/alipayimg.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open alipay app scan this qrcode, buy me a coffee!</p>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="wechatpay">
+              <div class="donate-payimg">
+                <img src="/images/donate/wechatpayimg.png" alt="Scan Qrcode" title="Scan" />
+              </div>
+              <p class="text-muted mv">Scan this qrcode</p>
+              <p class="text-grey">Open wechat app scan this qrcode, buy me a coffee!</p>
+            </div>
+          </div>
+          <div class="donate-footer">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#alipay" id="alipay-tab" role="tab" data-toggle="tab" aria-controls="alipay" aria-expanded="true"><i class="icon icon-alipay"></i> alipay</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#wechatpay" role="tab" id="wechatpay-tab" data-toggle="tab" aria-controls="wechatpay" aria-expanded="false"><i class="icon icon-wepay"></i> wechat payment</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="collapse2023" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2023">
-        <div class="panel-body">
-          <div class="collection">
-    
-    
-<a href="/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" class="collection-item"   itemprop="url">
-  <time datetime="2023-03-09T08:42:40.000Z" itemprop="datePublished">2023-03-09</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> node学习（自用）
-</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  
-    
-    
-    
-<a href="/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/" class="collection-item"   itemprop="url">
-  <time datetime="2023-03-09T08:42:40.000Z" itemprop="datePublished">2023-03-09</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 你不知道的javascript
-</a>
 
-
-  
-    
-    
-    
-<a href="/2023/03/09/book/javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="collection-item"   itemprop="url">
-  <time datetime="2023-03-09T08:42:21.000Z" itemprop="datePublished">2023-03-09</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> 红宝书
-</a>
-
-
-  
-    
-    
-    
-<a href="/2023/03/09/hello-world/" class="collection-item"   itemprop="url">
-  <time datetime="2023-03-09T08:25:32.042Z" itemprop="datePublished">2023-03-09</time>
-  <span>&nbsp;&nbsp;&nbsp;</span> Hello World
-</a>
-
-
-  
-  
-    </div></div></div></section>
-  
-
-	    </div>
-  	</article>
-  	 	
 </main>
 
   <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
@@ -454,6 +592,37 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 
 
 
+
+   
+
+
+
+
+   
+    
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine"></script>
+  <script type="text/javascript">
+  var GUEST = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link';
+  meta = meta.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#vcomments',
+    verify: false,
+    notify: false,
+    appId: '',
+    appKey: '',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: meta,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+  </script>
+
+     
 
 
 

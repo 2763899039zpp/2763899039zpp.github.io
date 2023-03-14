@@ -1,3 +1,11 @@
+<!--
+ * @Author: 陌上烟雨寒 2763899039@qq.com
+ * @Date: 2023-03-10 13:23:53
+ * @LastEditors: 陌上烟雨寒 2763899039@qq.com
+ * @LastEditTime: 2023-03-10 16:51:14
+ * @FilePath: \hexo-blog\themes\hexo-theme-pure\layout\layout.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang=en>
 <head>
@@ -21,7 +29,7 @@
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/03/09/hello-world/index.html">
+<meta property="og:url" content="https://2763899039zpp.github.io/2023/03/09/hello-world/index.html">
 <meta property="og:site_name" content="陌上烟雨寒的空间">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en_US">
@@ -30,7 +38,7 @@
 <meta property="article:author" content="zhangpp">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://example.com/2023/03/09/hello-world/index.html">
+  <link rel="canonical" href="https://2763899039zpp.github.io/2023/03/09/hello-world/index.html">
   
     <link rel="alternate" href="/atom.xml" title="陌上烟雨寒的空间" type="application/atom+xml">
   
@@ -48,7 +56,15 @@
 
 
 <body class="main-center" itemscope itemtype="http://schema.org/WebPage">
-  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <!--
+ * @Author: 陌上烟雨寒 2763899039@qq.com
+ * @Date: 2023-03-10 13:23:53
+ * @LastEditors: 陌上烟雨寒 2763899039@qq.com
+ * @LastEditTime: 2023-03-10 16:36:59
+ * @FilePath: \hexo-blog\themes\hexo-theme-pure\layout\_common\header.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
     <div class="navbar-header">
       
@@ -57,12 +73,20 @@
         <a id="avatar" href="https://github.com/cofess" target="_blank">
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
-        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
-        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
-        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
+        <h2 id="name" class="hidden-xs hidden-sm">陌上烟雨寒</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> 浙江, 中国</small>
       </div>
       
-      <div class="search" id="search-form-wrap">
+      <!--
+ * @Description: 
+ * @Version: 2.0
+ * @Author: zpp
+ * @Date: 2023-03-10 13:23:53
+ * @LastEditors: zpp
+ * @LastEditTime: 2023-03-13 17:00:43
+-->
+<div class="search" id="search-form-wrap">
 
     <form class="search-form sidebar-form">
         <div class="input-group">
@@ -138,36 +162,6 @@
         </li>
         
         
-        <li class="menu-item menu-item-repository">
-          <a href="/repository">
-            
-            <i class="icon icon-project"></i>
-            
-            <span class="menu-title">Repository</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-books">
-          <a href="/books">
-            
-            <i class="icon icon-book-fill"></i>
-            
-            <span class="menu-title">Books</span>
-          </a>
-        </li>
-        
-        
-        <li class="menu-item menu-item-links">
-          <a href="/links">
-            
-            <i class="icon icon-friendship"></i>
-            
-            <span class="menu-title">Links</span>
-          </a>
-        </li>
-        
-        
         <li class="menu-item menu-item-about">
           <a href="/about">
             
@@ -197,6 +191,7 @@
     </nav>
   </div>
 </header>
+ 
 
   
     <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
@@ -215,12 +210,33 @@
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-body">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/book/">book</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-body">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/book/" rel="tag">book</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/" rel="tag">node</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
     
       
+  <div class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-body tagcloud">
+      <a href="/tags/book/" style="font-size: 13.5px;">book</a> <a href="/tags/js/" style="font-size: 14px;">js</a> <a href="/tags/node/" style="font-size: 13px;">node</a>
+    </div>
+  </div>
+
     
       
   <div class="widget">
@@ -242,10 +258,10 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/node/">node</a>
               </p>
               <p class="item-title">
-                <a href="/2023/03/09/book/vue2/" class="title">vue2</a>
+                <a href="/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/" class="title">node学习（自用）</a>
               </p>
               <p class="item-date">
                 <time datetime="2023-03-09T08:42:40.000Z" itemprop="datePublished">2023-03-09</time>
@@ -257,13 +273,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/book/">book</a>
               </p>
               <p class="item-title">
-                <a href="/2023/03/09/book/vue3/" class="title">vue3</a>
+                <a href="/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/" class="title">你不知道的javascript</a>
               </p>
               <p class="item-date">
-                <time datetime="2023-03-09T08:42:21.000Z" itemprop="datePublished">2023-03-09</time>
+                <time datetime="2023-03-09T08:42:40.000Z" itemprop="datePublished">2023-03-09</time>
               </p>
             </div>
           </li>
@@ -272,13 +288,13 @@
             
             <div class="item-inner">
               <p class="item-category">
-                
+                <a class="category-link" href="/categories/book/">book</a>
               </p>
               <p class="item-title">
-                <a href="/2023/03/09/a/" class="title">a</a>
+                <a href="/2023/03/09/book/javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="title">红宝书</a>
               </p>
               <p class="item-date">
-                <time datetime="2023-03-09T08:41:51.000Z" itemprop="datePublished">2023-03-09</time>
+                <time datetime="2023-03-09T08:42:21.000Z" itemprop="datePublished">2023-03-09</time>
               </p>
             </div>
           </li>
@@ -308,7 +324,15 @@
 </aside>
 
   
-  
+  <!--
+ * @Author: 陌上烟雨寒 2763899039@qq.com
+ * @Date: 2023-03-10 13:23:53
+ * @LastEditors: 陌上烟雨寒 2763899039@qq.com
+ * @LastEditTime: 2023-03-10 16:12:11
+ * @FilePath: \hexo-blog\themes\hexo-theme-pure\layout\_partial\sidebar-toc.ejs
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
 <main class="main" role="main">
   <div class="content">
   <article id="post-hello-world" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
@@ -363,7 +387,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2023/03/09/hello-world/" title="Hello World" target="_blank" rel="external">http://example.com/2023/03/09/hello-world/</a>
+      <a href="https://2763899039zpp.github.io/2023/03/09/hello-world/" title="Hello World" target="_blank" rel="external">https://2763899039zpp.github.io/2023/03/09/hello-world/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -382,8 +406,8 @@
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">昵称</span><small class="ml-1x">Web Developer &amp; Designer</small></a></h3>
-        <div>个人简介。</div>
+        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">陌上烟雨寒</span><small class="ml-1x">Web Developer</small></a></h3>
+        <div>间歇性勤奋的前端搬砖用户。</div>
       </div>
     </figure>
   </div>
@@ -410,7 +434,7 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2023/03/09/a/" title="a"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
+      <a href="/2023/03/09/book/javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="红宝书"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;Newer</span></a>
     </li>
     
     
