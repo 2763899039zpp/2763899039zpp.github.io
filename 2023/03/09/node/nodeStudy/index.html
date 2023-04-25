@@ -14,16 +14,17 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"2763899039zpp.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"2763899039zpp.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="2 fs 文件系统模块const fs &#x3D; require(&quot;fs&quot;);  2.1 读取文件中的指定内容fs.readFile() 语法格式 fs.readFile(path[,options],callback)  path：路径options：编码格式callback：读完文件后拿到的结果 const fs &#x3D; require(&quot;fs&quot;); fs.readFile(&quot;.&#x2F;files&#x2F;11.tx">
 <meta property="og:type" content="article">
 <meta property="og:title" content="node 学习（自用）">
-<meta property="og:url" content="https://2763899039zpp.github.io/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/index.html">
+<meta property="og:url" content="https://2763899039zpp.github.io/2023/03/09/node/nodeStudy/index.html">
 <meta property="og:site_name" content="陌上烟雨寒的空间">
 <meta property="og:description" content="2 fs 文件系统模块const fs &#x3D; require(&quot;fs&quot;);  2.1 读取文件中的指定内容fs.readFile() 语法格式 fs.readFile(path[,options],callback)  path：路径options：编码格式callback：读完文件后拿到的结果 const fs &#x3D; require(&quot;fs&quot;); fs.readFile(&quot;.&#x2F;files&#x2F;11.tx">
 <meta property="og:locale" content="zh_CN">
@@ -36,7 +37,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/644c49dcd1c345dbb5b74009ef5d6a71.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA6ZmM5LiK54Of6Zuo5a-S,size_20,color_FFFFFF,t_70,g_se,x_16">
 
-<link rel="canonical" href="https://2763899039zpp.github.io/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/">
+<link rel="canonical" href="https://2763899039zpp.github.io/2023/03/09/node/nodeStudy/">
 
 
 <script id="page-configurations">
@@ -129,17 +130,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -197,7 +198,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://2763899039zpp.github.io/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="https://2763899039zpp.github.io/2023/03/09/node/nodeStudy/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -249,8 +250,8 @@
       <span class="post-meta-item-text">Changyan：</span>
     
     
-      <a title="changyan" href="/2023/03/09/node/node%E5%AD%A6%E4%B9%A0%EF%BC%88%E8%87%AA%E7%94%A8%EF%BC%89/#SOHUCS" itemprop="discussionUrl">
-        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2023/03/09/node/node学习（自用）/" itemprop="commentCount"></span>
+      <a title="changyan" href="/2023/03/09/node/nodeStudy/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2023/03/09/node/nodeStudy/" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -1116,11 +1117,11 @@ app.listen(8081, function () &#123;
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2023/03/09/book/javascript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="prev" title="红宝书">
+    <a href="/2023/03/09/book/js%20advanced%20programming/" rel="prev" title="红宝书">
       <i class="fa fa-chevron-left"></i> 红宝书
     </a></div>
       <div class="post-nav-item">
-    <a href="/2023/03/09/book/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84javascript/" rel="next" title="你不知道的javascript">
+    <a href="/2023/03/09/book/You%20Don%E2%80%99t%20Know%20JS/" rel="next" title="你不知道的javascript">
       你不知道的javascript <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -1202,20 +1203,20 @@ app.listen(8081, function () &#123;
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1272,6 +1273,8 @@ app.listen(8081, function () &#123;
 
   
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
